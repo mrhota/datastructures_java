@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import datastructures;
+import datastructures.*;
 
 public class LinkedListTest {
 	/**
@@ -9,7 +9,7 @@ public class LinkedListTest {
 	 */
 	@Test
 	public void testSomeLinkedListInit() {
-		datastructures.LinkedList classUnderTest = new datastructures.LinkedList();
-		assertEqual(0, classUnderTest.size());
+		LinkedList<Integer> classUnderTest = new LinkedList<Integer>();
+		assertEquals(0, classUnderTest.size());
 	}
 }
