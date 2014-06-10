@@ -139,6 +139,7 @@ public class LinkedList<T> implements Iterable<T> {
 				throw new IllegalStateException();
 			}
 			LinkedList.this.remove(_current.prev);
+			++_mods;
 			_canRemove = false;
 		}
 	}
